@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>Home Page</title>
+</head>
+<body>
+ 
+
+ 
+
+  {% extends 'nav_bar.html'%}
+  {%block content%}
+  <h1>Welcome to the my website</h1>
+
+  {%endblock%}
+
+  
+
+</body>
+<style>
+  body{
+    background-image: url("{{ url_for('static', filename='background.jpeg') }}");
+  }
+</style>
+    
+  
+</html>
